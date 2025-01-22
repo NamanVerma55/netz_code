@@ -15,7 +15,7 @@ import json
 app = FastAPI()
 
 # Add session middleware with a secret key
-app.add_middleware(SessionMiddleware, secret_key="164bca8ca3e15c34036736330473fa990edfe9a40da0100b77a9ab255b0c9011")
+app.add_middleware(SessionMiddleware, secret_key="")
 
 # Initialize LangChain components
 MODEL = "llama2"
